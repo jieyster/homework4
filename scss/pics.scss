@@ -1,0 +1,44 @@
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -43px;
+    padding: 0 231px;
+    color: white;   
+    .box {
+        width: 236px;
+        height: 304px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;  
+        font-family: "Proxima";
+        
+        h1{
+            font-size: 60px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        .learn {
+            background-color: #79ADDC;
+            width: 133px;
+            height: 40px;
+            margin-left: 52px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 56px;
+        }
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .pics  {
+        padding: 0;
+        justify-content: center;
+        gap: 20px
+        ;
+    }
+}

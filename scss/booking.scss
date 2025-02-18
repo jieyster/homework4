@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    justify-content: center;
+    
+    .booking{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 818px;  
+    }
+    
+
+   
+
+    h1 {
+        font-size: 60px;
+        font-family: "Proxima";
+        margin-top: 50px;
+    }
+
+    .top-inputs{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    input {
+        border: solid 1px #79ADDC;
+        height: 58px;
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .small {
+        width: 344px;
+    }
+    .big {
+        width: 453px;
+    }
+
+    .check {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        font-size: 18px;
+        width: 100%;
+        .in, .out {
+            display: flex;
+            width: 100%;
+            position: relative;
+        }
+
+        .cal {
+            position: absolute;
+            top: 37px;
+            right: 20.5px;
+        }
+        p {
+            width: 120px;
+            margin-top: 37px;
+            min-width: 100px;
+        }
+        input {
+            width: 698px;
+        }
+    }
+    .room {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            width: 120px;
+            margin-top: 37px;
+        }
+        input {
+            width: 103px;
+            
+        }
+        .sect {
+            display: flex;
+            position: relative;
+
+            .down {
+                position: absolute;
+                top: 34px;
+                right: 10.9px;
+                font-size: 24px;
+            }
+        }
+    }
+    .message {
+        width: 100%;
+        text-align: center;
+        
+        input {
+            width: 818px;
+            height: 192px;
+            padding-bottom: 152px;
+            margin-bottom: 37px;
+        }
+
+        p {
+            width: 100%;
+            background-color: #79ADDC;
+            height: 61px;
+            padding-top: 20px;
+            color: white;
+            border-radius: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container  {
+        .booking {
+            width: 90%;
+        }
+        .big {
+            width: 100%;
+        }        
+
+        .small {
+            width: 100%;
+        }
+
+        .room {
+            display: inline;
+        }
+        .down {
+            
+            left: 200px;
+            
+        }
+        .message input {
+            width: 100%;
+        }
+    }
+}

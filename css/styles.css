@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Proxima";
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: "Gills";
+  src: url(../fonts/GillSans.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 500px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.photo-container {
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: pink;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  width: 100%;
+  position: relative;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.nav nav {
+  height: 90px;
+  border-bottom: solid 2px #fff;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  color: #79ADDC;
+  width: 64%;
+}
+.nav nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 20.5px 0 20.5px;
+}
+.nav nav .logo {
+  border-style: solid;
+  border-color: white;
+  color: white;
+  min-width: 92px;
+  height: 42px;
+  font-family: "Gills";
+  display: flex;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1170px) {
+  .nav nav {
+    line-height: 25px;
+    min-width: 450px;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container .booking {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 818px;
+}
+.container h1 {
+  font-size: 60px;
+  font-family: "Proxima";
+  margin-top: 50px;
+}
+.container .top-inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container input {
+  border: solid 1px #79ADDC;
+  height: 58px;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.container .small {
+  width: 344px;
+}
+.container .big {
+  width: 453px;
+}
+.container .check {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  width: 100%;
+}
+.container .check .in, .container .check .out {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.container .check .cal {
+  position: absolute;
+  top: 37px;
+  right: 20.5px;
+}
+.container .check p {
+  width: 120px;
+  margin-top: 37px;
+  min-width: 100px;
+}
+.container .check input {
+  width: 698px;
+}
+.container .room {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .room p {
+  width: 120px;
+  margin-top: 37px;
+}
+.container .room input {
+  width: 103px;
+}
+.container .room .sect {
+  display: flex;
+  position: relative;
+}
+.container .room .sect .down {
+  position: absolute;
+  top: 34px;
+  right: 10.9px;
+  font-size: 24px;
+}
+.container .message {
+  width: 100%;
+  text-align: center;
+}
+.container .message input {
+  width: 818px;
+  height: 192px;
+  padding-bottom: 152px;
+  margin-bottom: 37px;
+}
+.container .message p {
+  width: 100%;
+  background-color: #79ADDC;
+  height: 61px;
+  padding-top: 20px;
+  color: white;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .container .booking {
+    width: 90%;
+  }
+  .container .big {
+    width: 100%;
+  }
+  .container .small {
+    width: 100%;
+  }
+  .container .room {
+    display: inline;
+  }
+  .container .down {
+    left: 200px;
+  }
+  .container .message input {
+    width: 100%;
+  }
+}
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -43px;
+  padding: 0 231px;
+  color: white;
+}
+.pics .box {
+  width: 236px;
+  height: 304px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Proxima";
+}
+.pics .box h1 {
+  font-size: 60px;
+}
+.pics .box h2 {
+  font-size: 30px;
+}
+.pics .box .learn {
+  background-color: #79ADDC;
+  width: 133px;
+  height: 40px;
+  margin-left: 52px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 56px;
+}
+
+@media screen and (max-width: 1210px) {
+  .pics {
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #79ADDC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12%;
+  color: white;
+}
+footer h5 {
+  font-size: 12px;
+  font-family: "Gills";
+  padding-top: 23px;
+}
+footer .logo {
+  border-style: solid;
+  border-color: white;
+  color: white;
+  min-width: 92px;
+  height: 42px;
+  font-family: "Gills";
+  display: flex;
+  padding-top: 20px;
+  font-size: 20px;
+}
+footer .icons {
+  display: flex;
+  gap: 21px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    gap: 20px;
+  }
+}
